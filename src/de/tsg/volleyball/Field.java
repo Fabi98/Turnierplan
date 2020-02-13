@@ -5,12 +5,12 @@ import java.util.*;
 
 public class Field {
 
-    public Ranking newRound(Team A,Team B, Team C){
+    public Ranking newRound(Team A, Team B, Team C) {
         //Init Games [Game against all]
 
-        Game gameAB = new Game(A,B);
-        Game gameAC = new Game(A,C);
-        Game gameBC = new Game(B,C);
+        Game gameAB = new Game(A, B);
+        Game gameAC = new Game(A, C);
+        Game gameBC = new Game(B, C);
 
         //Play Game 1 ----------------------------------------------------
         GameResult resultAB = gameAB.enter_results();
@@ -42,6 +42,6 @@ public class Field {
         B.setRound_wins(resultBC.getWinsA());
         C.setRound_wins(resultBC.getWinsB());
 
-        return HelperRanking.calc_Ranking(new ArrayList<Team>(Arrays.asList(A,B,C)));
+        return HelperRanking.calc_Ranking(new ArrayList<Team>(Arrays.asList(A, B, C)));
     }
 }

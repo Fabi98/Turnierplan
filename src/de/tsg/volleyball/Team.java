@@ -2,7 +2,7 @@ package de.tsg.volleyball;
 
 public class Team {
     private String name;
-    private int global_wins,global_points, round_wins, round_points;
+    private int global_wins, global_points, round_wins, round_points;
 
     public Team(String name) {
         this.name = name;

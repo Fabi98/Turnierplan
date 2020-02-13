@@ -3,7 +3,7 @@ package de.tsg.volleyball;
 import java.util.Random;
 
 public class GameResult {
-    private int pointsA,pointsB;
+    private int pointsA, pointsB;
     private int winsA, winsB;
 
     public GameResult(int pointsA, int pointsB) {
@@ -11,20 +11,19 @@ public class GameResult {
         this.pointsB = pointsB;
 
         //Determine Winner
-        if (pointsA > pointsB){
+        if (pointsA > pointsB) {
             System.out.println("Team A wins!");
             winsA++;
 
-        }else if (pointsB > pointsA){
+        } else if (pointsB > pointsA) {
             System.out.println("Team B wins!");
             winsB++;
-        }
-        else {
+        } else {
             System.out.println("Tie! Both Teams Win");
             Random r = new Random();
-            if (r.nextInt()%2==0){
+            if (r.nextInt() % 2 == 0) {
                 winsA++;
-            }else {
+            } else {
                 winsB++;
             }
         }

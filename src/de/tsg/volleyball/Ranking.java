@@ -3,13 +3,13 @@ package de.tsg.volleyball;
 import java.util.List;
 
 public class Ranking {
-    private Team first,second,third;
+    private Team first, second, third;
 
     public Ranking(List<Team> teams) {
-            //Assume List is sorted by wins (first important) and points (second important)
-            this.first = teams.get(0);
-            this.second = teams.get(1);
-            this.third = teams.get(2);
+        //Assume List is sorted by wins (first important) and points (second important)
+        this.first = teams.get(0);
+        this.second = teams.get(1);
+        this.third = teams.get(2);
     }
 
     public Team getFirst() {
