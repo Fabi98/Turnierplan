@@ -9,13 +9,13 @@ import java.util.Comparator;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
-    static int total_rounds=10;
-    static int count=0;
-    static int[] unique_numbers =ThreadLocalRandom.current().ints(0, 100).distinct().limit(500).toArray();
+    //static int total_rounds=10;
+    //static int count=0;
+    //static int[] unique_numbers =ThreadLocalRandom.current().ints(0, 100).distinct().limit(500).toArray();
 
     public static void main(String[] args) {
 
-
+        int total_rounds=10;
 
         Team A = new Team("A");
         Team B = new Team("B");
@@ -68,15 +68,15 @@ public class Main {
 
     }
     public static void display_ranking(Ranking[] ranking_fields){
-        System.out.println("#1: "+ranking_fields[0].getFirst().getName()+" Wins: "+ranking_fields[0].getFirst().getGlobal_wins()+" Points: "+ranking_fields[0].getFirst().getRound_points());
-        System.out.println("#2: "+ranking_fields[0].getSecond().getName()+" Wins: "+ranking_fields[0].getSecond().getGlobal_wins()+" Points: "+ranking_fields[0].getSecond().getRound_points());
-        System.out.println("#3: "+ranking_fields[0].getThird().getName()+" Wins: "+ranking_fields[0].getThird().getGlobal_wins()+" Points: "+ranking_fields[0].getThird().getRound_points());
-        System.out.println("#4: "+ranking_fields[1].getFirst().getName()+" Wins: "+ranking_fields[1].getFirst().getGlobal_wins()+" Points: "+ranking_fields[1].getFirst().getRound_points());
-        System.out.println("#5: "+ranking_fields[1].getSecond().getName()+" Wins: "+ranking_fields[1].getSecond().getGlobal_wins()+" Points: "+ranking_fields[1].getSecond().getRound_points());
-        System.out.println("#6: "+ranking_fields[1].getThird().getName()+" Wins: "+ranking_fields[1].getThird().getGlobal_wins()+" Points: "+ranking_fields[1].getThird().getRound_points());
-        System.out.println("#7: "+ranking_fields[2].getFirst().getName()+" Wins: "+ranking_fields[2].getFirst().getGlobal_wins()+" Points: "+ranking_fields[2].getFirst().getRound_points());
-        System.out.println("#8: "+ranking_fields[2].getSecond().getName()+" Wins: "+ranking_fields[2].getSecond().getGlobal_wins()+" Points: "+ranking_fields[2].getSecond().getRound_points());
-        System.out.println("#9: "+ranking_fields[2].getThird().getName()+" Wins: "+ranking_fields[2].getThird().getGlobal_wins()+" Points: "+ranking_fields[2].getThird().getRound_points());
+        System.out.println("#1: "+ranking_fields[0].getFirst().getName()+" Wins: "+ranking_fields[0].getFirst().getGlobal_wins()+" Points: "+ranking_fields[0].getFirst().getGlobal_points());
+        System.out.println("#2: "+ranking_fields[0].getSecond().getName()+" Wins: "+ranking_fields[0].getSecond().getGlobal_wins()+" Points: "+ranking_fields[0].getSecond().getGlobal_points());
+        System.out.println("#3: "+ranking_fields[0].getThird().getName()+" Wins: "+ranking_fields[0].getThird().getGlobal_wins()+" Points: "+ranking_fields[0].getThird().getGlobal_points());
+        System.out.println("#4: "+ranking_fields[1].getFirst().getName()+" Wins: "+ranking_fields[1].getFirst().getGlobal_wins()+" Points: "+ranking_fields[1].getFirst().getGlobal_points());
+        System.out.println("#5: "+ranking_fields[1].getSecond().getName()+" Wins: "+ranking_fields[1].getSecond().getGlobal_wins()+" Points: "+ranking_fields[1].getSecond().getGlobal_points());
+        System.out.println("#6: "+ranking_fields[1].getThird().getName()+" Wins: "+ranking_fields[1].getThird().getGlobal_wins()+" Points: "+ranking_fields[1].getThird().getGlobal_points());
+        System.out.println("#7: "+ranking_fields[2].getFirst().getName()+" Wins: "+ranking_fields[2].getFirst().getGlobal_wins()+" Points: "+ranking_fields[2].getFirst().getGlobal_points());
+        System.out.println("#8: "+ranking_fields[2].getSecond().getName()+" Wins: "+ranking_fields[2].getSecond().getGlobal_wins()+" Points: "+ranking_fields[2].getSecond().getGlobal_points());
+        System.out.println("#9: "+ranking_fields[2].getThird().getName()+" Wins: "+ranking_fields[2].getThird().getGlobal_wins()+" Points: "+ranking_fields[2].getThird().getGlobal_points());
     }
 
 }

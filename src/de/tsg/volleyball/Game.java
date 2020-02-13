@@ -22,14 +22,8 @@ public class Game {
         //String[] points = result.split(":");
         //return new GameResult(Integer.parseInt(points[0]),Integer.parseInt(points[1]));
         //System.out.println(getRandomNumberInRange(1,50));
-        int unique_1=0,unique_2=0;
-        if (Main.count<Main.unique_numbers.length-2){
-            unique_1=Main.unique_numbers[Main.count];
-            Main.count++;
-            unique_2=Main.unique_numbers[Main.count];
-            Main.count++;
-        }
-        return new GameResult(unique_1,unique_2);
+
+        return new GameResult(getRandomNumberInRange(10,30),getRandomNumberInRange(10,30));
     }
     private static int getRandomNumberInRange(int min, int max) {
         //define ArrayList to hold Integer objects
